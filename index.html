@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Pushing the Physical Limits: Extreme Quadrupedal Fall Recovery Under Multi-Joint Failures</title>
+  <link href="res/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="res/academicons-1.9.2/css/academicons.min.css"/>
+  <script src="res/js/fa.js"></script>
+
+	<style>
+      .header {
+        width: auto;
+        max-width: auto;
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+        background-color: rgba(250, 250, 250)
+      }
+
+      a:link,a:visited
+      {
+        color: #0071bc;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: #208799;
+      }
+
+      hr {
+        border: 10;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(0, 113, 188, 0.2), rgba(0, 0, 0, 0.1), rgba(0, 113, 188, 0.2));
+      }
+
+      .gap-30 {height:30px;}
+      .gap-20 {height:20px;}
+      .gap-10 {height:10px;}
+      .gap-5 {height:5px;}
+
+      .no-gutters {
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    .btn {
+      margin-left: 0.2rem;
+      margin-right: 0.2rem;
+		}
+
+
+	</style>
+</head>
+
+<div class="header">
+	<div class="container">
+		<center><h1>Pushing the Physical Limits: Extreme Quadrupedal Fall Recovery Under Multi-Joint Failures</h1></center>
+		<div class="gap-20"></div>
+		<!--------------------- Author Names --------------------->
+		<center>
+			<a href="https://https://boyuandeng.github.io/" target="_blank" style="font-size:20px">Boyuan Deng</a><sup
+						style="font-size:14px">*</sup>,
+			<a href="" target="_blank" style="font-size:20px">Weijie Wang</a><sup
+						style="font-size:14px"></sup>,
+      <a href="https://www.iit.it/it/people-details/-/people/nikos-tsagarakis" target="_blank" style="font-size:20px">Nikolaos Tsagarakis</a><sup
+						style="font-size:14px"></sup>
+		</center>
+
+		<div class="gap-10"></div>
+		<center>
+			Istituto Italiano di Tecnologia
+		</center>
+
+		<div class="gap-20"></div>
+
+		<center>
+			<div class="btn-group" role="group">
+          <!-- <a href="https://ieeexplore.ieee.org/document/11495090"> -->
+            <a href="">
+					<button type="button" class="btn btn-dark">
+						<span class="icon">
+              <i class="fas fa-file-pdf"></i> Paper
+            </span>
+					</button>
+				</a>
+
+
+				<a href="">
+					<button type="button" class="btn btn-dark">
+						<span class="icon">
+              <i class="fab fa-twitter"></i> Summary
+            </span>
+					</button>
+				</a>
+
+				<a href="">
+					<button type="button" class="btn btn-dark">
+						<span class="icon">
+              <i class="fab fa-github"></i> Code
+            </span>
+					</button>
+				</a>
+
+				<a href="">
+					<button type="button" class="btn btn-dark">
+						<span class="icon">
+              <i class="fab fa-youtube"></i> Pitch Video
+            </span>
+					</button>
+				</a>
+
+			</div>
+		</center>
+
+	</div>
+</div>
+
+<div class="container">
+
+    <!--------------------- abstract --------------------->
+    <div class="gap-30"></div>
+    <h2 style="text-align: center"> Abstract </h2>
+    <div class="gap-10"></div>
+    <center>
+        <p style="width:90%; text-align: justify; white-space: normal;"> 
+          .</p>
+    </center>
+
+
+    <h2 style="text-align: center"> Framework and Simulation</h2>
+
+    <!-- <div class="gap-10"></div>
+    <center><p style="width:90%; text-align: justify; white-space: normal;">
+      We study how quickly the policy can adapt to shifts in the visual field.
+    </p></center> -->
+
+    <center>
+      <div style="display: flex; justify-content: center; gap: 10px; margin-bottom: 30px;">
+        <img class="img-fluid" src="images/fall1.png" style="width: 24%;" alt="">
+        <img class="img-fluid" src="images/fall2.png" style="width: 24%;" alt="">
+        <img class="img-fluid" src="images/framework.pdf" style="width: 48%;" alt="">
+    </div>
+	</center>
+    </div>
+
+    <hr>
+    <h2 style="text-align: center"> Diverse Terrains Depolyment </h2>
+
+    <div class="gap-10"></div>
+    <center><p style="width:90%; text-align: justify; white-space: normal;">
+      We show that our policy performs on the non-flat environments, also we provide the pt that anyone could be free to download it and deploy it on the real robot.
+    </p></center>
+    <div class="row no-gutters d-flex justify-content-center">
+        <div class="col-4">
+          <center> <b>Flat</b></center>
+            <video controls playsinline autoplay loop muted src="res/videos/flat.mp4" width="97%"
+                   style="border-radius:10px; border:1px solid black"></video>
+        </div>
+        <div class="col-4">
+          <center> <b>Foam_1</b> </center>
+            <video controls playsinline autoplay loop muted src="res/videos/foam.mp4" width="97%"
+                   style="border-radius:10px; border:1px solid black"></video>
+        </div>
+        <div class="col-4">
+          <center> <b>Foam_2</b> </center>
+            <video controls playsinline autoplay loop muted src="res/videos/foam2.mp4" width="97%"
+                   style="border-radius:10px; border:1px solid black"></video>
+        </div>
+    </div>
+    <div class="gap-10"></div>
+    <center><p style="width:90%; text-align: justify; white-space: normal;">
+     Roots environments
+    </p></center>
+    <div class="row no-gutters d-flex justify-content-center">
+        <div class="col-5">
+            <video controls playsinline autoplay loop muted src="res/videos/tree1.mp4" width="97%"
+                   style="border-radius:10px; border:1px solid black"></video>
+        </div>
+        <div class="col-5">
+            <video controls playsinline autoplay loop muted src="res/videos/tree2.mp4" width="97%"
+                   style="border-radius:10px; border:1px solid black"></video>
+        </div>
+    </div>
+    <div class="row no-gutters d-flex justify-content-center">
+      <div class="col-5">
+          <video controls playsinline autoplay loop muted src="res/videos/tree3.mp4" width="97%"
+                 style="border-radius:10px; border:1px solid black"></video>
+      </div>
+      <div class="col-5">
+          <video controls playsinline autoplay loop muted src="res/videos/tree4.mp4" width="97%"
+                 style="border-radius:10px; border:1px solid black"></video>
+      </div>
+  </div>
+  <div class="gap-10"></div>
+  <center><p style="width:90%; text-align: justify; white-space: normal;">
+   Stairs
+  </p></center>
+  <div class="row no-gutters d-flex justify-content-center">
+      <div class="col-5">
+          <video controls playsinline autoplay loop muted src="res/videos/stair1.mp4" width="97%"
+                 style="border-radius:10px; border:1px solid black"></video>
+      </div>
+      <div class="col-5">
+          <video controls playsinline autoplay loop muted src="res/videos/stair2.mp4" width="97%"
+                 style="border-radius:10px; border:1px solid black"></video>
+      </div>
+  </div>
+  <div class="row no-gutters d-flex justify-content-center">
+    <div class="col-5">
+        <video controls playsinline autoplay loop muted src="res/videos/stair3.mp4" width="97%"
+               style="border-radius:10px; border:1px solid black"></video>
+    </div>
+    <div class="col-5">
+        <video controls playsinline autoplay loop muted src="res/videos/stair4.mp4" width="97%"
+               style="border-radius:10px; border:1px solid black"></video>
+    </div>
+</div>
+  <div class="gap-10"></div>
+  <center><p style="width:90%; text-align: justify; white-space: normal;">
+  Mass
+  </p></center>
+  <div class="row no-gutters d-flex justify-content-center">
+      <div class="col-5">
+          <video controls playsinline autoplay loop muted src="res/videos/rand1.mp4" width="97%"
+                style="border-radius:10px; border:1px solid black"></video>
+      </div>
+      <div class="col-5">
+          <video controls playsinline autoplay loop muted src="res/videos/rand2.mp4" width="97%"
+                style="border-radius:10px; border:1px solid black"></video>
+      </div>
+  </div>
+  <div class="row no-gutters d-flex justify-content-center">
+    <div class="col-5">
+        <video controls playsinline autoplay loop muted src="res/videos/rand3.mp4" width="97%"
+              style="border-radius:10px; border:1px solid black"></video>
+    </div>
+    <div class="col-5">
+        <video controls playsinline autoplay loop muted src="res/videos/rand4.mp4" width="97%"
+              style="border-radius:10px; border:1px solid black"></video>
+    </div>
+  </div>
+
+    </div>
+
+    <hr>
+    <h2 style="text-align: center"> Cross-Platform Validation </h2>
+
+    <div class="gap-10"></div>
+    <center><p style="width:90%; text-align: justify; white-space: normal;">
+      We show that our policy performs on the non-flat environments with Kyon robot which is Wheeled-Quadruped.
+    </p></center>
+    <div class="row no-gutters d-flex justify-content-center">
+        <div class="col-4">
+          <center> <b>Box Grid</b></center>
+            <video controls playsinline autoplay loop muted src="res/videos/Box_Grid.mp4" width="97%"
+                   style="border-radius:10px; border:1px solid black"></video>
+        </div>
+        <div class="col-4">
+          <center> <b>Pyramid Slope</b> </center>
+            <video controls playsinline autoplay loop muted src="res/videos/Pyramid_Slope.mp4" width="97%"
+                   style="border-radius:10px; border:1px solid black"></video>
+        </div>
+        <div class="col-4">
+          <center> <b>Random Rough</b> </center>
+            <video controls playsinline autoplay loop muted src="res/videos/Pyramid_Stairs.mp4" width="97%"
+                   style="border-radius:10px; border:1px solid black"></video>
+        </div>
+    </div>
+    <div class="row no-gutters d-flex justify-content-center">
+      
+        <div class="col-4">
+          <center> <b>Pyramid Stairs</b> </center>
+            <video controls playsinline autoplay loop muted src="res/videos/Random_Rough.mp4" width="97%"
+                   style="border-radius:10px; border:1px solid black"></video>
+        </div>
+        <div class="col-4">
+          <center> <b>Inverted Pyramid Stairs</b> </center>
+            <video controls playsinline autoplay loop muted src="res/videos/Inverted_Pyramid_Slope.mp4" width="97%"
+                   style="border-radius:10px; border:1px solid black"></video>
+        </div>
+        <div class="col-4">
+          <center> <b>Inverted Pyramid Stairs</b> </center>
+            <video controls playsinline autoplay loop muted src="res/videos/Inverted_Pyramid_Stairs.mp4" width="97%"
+                   style="border-radius:10px; border:1px solid black"></video>
+        </div>
+    </div>
+
+    </div>
+
+
+      	<h2 style="text-align: center"> Bibtex </h2>
+	<pre style="background-color: #f4f4f4;">
+
+<!-- 
+    @ARTICLE{11495090,
+      author={Deng, Boyuan and Yang, Xu and Mo, Yilin and Tsagarakis, Nikolaos},
+      journal={IEEE Robotics and Automation Letters}, 
+      title={Teacher-Guided Terrain-Aware Learning for Recovery of Quadruped Robots}, 
+      year={2026},
+      volume={11},
+      number={6},
+      pages={7564-7571},
+      keywords={Quadrupedal robots;reinforcement learning;robot learning},
+      doi={10.1109/LRA.2026.3688056}} -->
+
+  </pre>
+	<hr>
+
+	<b><span style="font-size:22px">Acknowledgements:</span></b><br>
+
+  We would like to thank CoCo and all of guys from Humanoids and Human Centered Mechatronics (HHCM) for their discussions.
+
+	<p style="text-align: right"><a href="https://github.com/HaozhiQi/haozhiqi.github.io/tree/master/hora" style="font-size:12px;">Template for this Website</a></p>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="res/js/bootstrap.min.js"></script>
+
+</div>
+</html>
