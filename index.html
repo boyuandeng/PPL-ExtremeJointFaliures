@@ -128,7 +128,7 @@
     </center>
 
 
-    <h2 style="text-align: center"> Framework and Simulation</h2>
+    <h2 style="text-align: center">Simulation and Framework</h2>
 
     <!-- <div class="gap-10"></div>
     <center><p style="width:90%; text-align: justify; white-space: normal;">
@@ -144,104 +144,58 @@
 	</center>
     </div>
 
-    <hr>
-    <h2 style="text-align: center"> Diverse Terrains Depolyment </h2>
-
-    <div class="gap-10"></div>
-    <center><p style="width:90%; text-align: justify; white-space: normal;">
-      We show that our policy performs on the non-flat environments, also we provide the pt that anyone could be free to download it and deploy it on the real robot.
-    </p></center>
-    <div class="row no-gutters d-flex justify-content-center">
-        <div class="col-4">
-          <center> <b>Flat</b></center>
-            <video controls playsinline autoplay loop muted src="res/videos/flat.mp4" width="97%"
-                   style="border-radius:10px; border:1px solid black"></video>
-        </div>
-        <div class="col-4">
-          <center> <b>Foam_1</b> </center>
-            <video controls playsinline autoplay loop muted src="res/videos/foam.mp4" width="97%"
-                   style="border-radius:10px; border:1px solid black"></video>
-        </div>
-        <div class="col-4">
-          <center> <b>Foam_2</b> </center>
-            <video controls playsinline autoplay loop muted src="res/videos/foam2.mp4" width="97%"
-                   style="border-radius:10px; border:1px solid black"></video>
-        </div>
-    </div>
-    <div class="gap-10"></div>
-    <center><p style="width:90%; text-align: justify; white-space: normal;">
-     Roots environments
-    </p></center>
-    <div class="row no-gutters d-flex justify-content-center">
-        <div class="col-5">
-            <video controls playsinline autoplay loop muted src="res/videos/tree1.mp4" width="97%"
-                   style="border-radius:10px; border:1px solid black"></video>
-        </div>
-        <div class="col-5">
-            <video controls playsinline autoplay loop muted src="res/videos/tree2.mp4" width="97%"
-                   style="border-radius:10px; border:1px solid black"></video>
-        </div>
-    </div>
-    <div class="row no-gutters d-flex justify-content-center">
-      <div class="col-5">
-          <video controls playsinline autoplay loop muted src="res/videos/tree3.mp4" width="97%"
-                 style="border-radius:10px; border:1px solid black"></video>
-      </div>
-      <div class="col-5">
-          <video controls playsinline autoplay loop muted src="res/videos/tree4.mp4" width="97%"
-                 style="border-radius:10px; border:1px solid black"></video>
-      </div>
-  </div>
-  <div class="gap-10"></div>
-  <center><p style="width:90%; text-align: justify; white-space: normal;">
-   Stairs
-  </p></center>
-  <div class="row no-gutters d-flex justify-content-center">
-      <div class="col-5">
-          <video controls playsinline autoplay loop muted src="res/videos/stair1.mp4" width="97%"
-                 style="border-radius:10px; border:1px solid black"></video>
-      </div>
-      <div class="col-5">
-          <video controls playsinline autoplay loop muted src="res/videos/stair2.mp4" width="97%"
-                 style="border-radius:10px; border:1px solid black"></video>
+    <div class="container mt-5">
+      <h2 class="text-center mb-4" style="font-weight: bold; color: #333;">N = 1 (单关节故障)</h2>
+      <hr style="width: 20%; margin: 0 auto 30px auto; border-top: 3px solid #007bff;">
+  
+      <div class="row">
+          <div class="col-md-6 mb-4">
+              <div class="card h-100 shadow-sm" style="border-radius: 12px; border: 1px solid #e0e0e0;">
+                  <div class="card-body">
+                      <h5 class="card-title font-weight-bold">📍 Hip (左前)</h5>
+                      <p class="card-text">
+                          <span class="badge badge-danger">故障表现: 背面故障 (示例)</span>
+                      </p>
+                      
+                      <div class="row no-gutters mt-3 text-center">
+                          <div class="col-6 p-1">
+                              <small class="d-block mb-1 text-muted">正面 (Front)</small>
+                              <div class="d-flex align-items-center justify-content-center bg-light text-secondary rounded" style="height: 150px; border: 1px dashed #ccc;">
+                                  <span>No Video</span>
+                              </div>
+                          </div>
+                          <div class="col-6 p-1">
+                              <small class="d-block mb-1 text-muted">背面 (Back)</small>
+                              <video controls playsinline autoplay loop muted src="res/videos/N1_hip_back.mp4" width="100%" style="border-radius:8px; border:1px solid #333; height: 150px; object-fit: cover;"></video>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+          <div class="col-md-6 mb-4">
+              <div class="card h-100 shadow-sm" style="border-radius: 12px; border: 1px solid #e0e0e0;">
+                  <div class="card-body">
+                      <h5 class="card-title font-weight-bold">📍 Thigh (右前)</h5>
+                      <p class="card-text"><span class="badge badge-warning">故障表现: 正面故障</span></p>
+                      
+                      <div class="row no-gutters mt-3 text-center">
+                          <div class="col-6 p-1">
+                              <small class="d-block mb-1 text-muted">正面 (Front)</small>
+                              <video controls playsinline autoplay loop muted src="res/videos/N1_thigh_front.mp4" width="100%" style="border-radius:8px; border:1px solid #333; height: 150px; object-fit: cover;"></video>
+                          </div>
+                          <div class="col-6 p-1">
+                              <small class="d-block mb-1 text-muted">背面 (Back)</small>
+                              <div class="d-flex align-items-center justify-content-center bg-light text-secondary rounded" style="height: 150px; border: 1px dashed #ccc;">
+                                  <span>No Video</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </div>
   </div>
-  <div class="row no-gutters d-flex justify-content-center">
-    <div class="col-5">
-        <video controls playsinline autoplay loop muted src="res/videos/stair3.mp4" width="97%"
-               style="border-radius:10px; border:1px solid black"></video>
-    </div>
-    <div class="col-5">
-        <video controls playsinline autoplay loop muted src="res/videos/stair4.mp4" width="97%"
-               style="border-radius:10px; border:1px solid black"></video>
-    </div>
-</div>
-  <div class="gap-10"></div>
-  <center><p style="width:90%; text-align: justify; white-space: normal;">
-  Mass
-  </p></center>
-  <div class="row no-gutters d-flex justify-content-center">
-      <div class="col-5">
-          <video controls playsinline autoplay loop muted src="res/videos/rand1.mp4" width="97%"
-                style="border-radius:10px; border:1px solid black"></video>
-      </div>
-      <div class="col-5">
-          <video controls playsinline autoplay loop muted src="res/videos/rand2.mp4" width="97%"
-                style="border-radius:10px; border:1px solid black"></video>
-      </div>
-  </div>
-  <div class="row no-gutters d-flex justify-content-center">
-    <div class="col-5">
-        <video controls playsinline autoplay loop muted src="res/videos/rand3.mp4" width="97%"
-              style="border-radius:10px; border:1px solid black"></video>
-    </div>
-    <div class="col-5">
-        <video controls playsinline autoplay loop muted src="res/videos/rand4.mp4" width="97%"
-              style="border-radius:10px; border:1px solid black"></video>
-    </div>
-  </div>
-
-    </div>
 
 
       	<h2 style="text-align: center"> Bibtex </h2>
