@@ -153,7 +153,7 @@
         <hr class="my-5">
     
         <div class="mb-5">
-          <h2 class="text-center section-title text-success">👑 N = 0 : No Failures</h2>
+          <h2 class="text-center section-title text-success">N = 0 : No Failures</h2>
           <hr style="width: 80px; border-top: 3px solid #28a745; margin: 10px auto 30px auto;">
           
           <div class="card shadow border-0 mb-4" style="border-radius: 16px; border: 1px solid #c3e6cb !important;">
@@ -164,11 +164,11 @@
                   <div class="row">
                       <div class="col-md-6 mb-3 mb-md-0 text-center">
                           <small class="d-block mb-2 font-weight-bold text-secondary">Face->Ground</small>
-                          <video controls playsinline autoplay loop muted src="res/videos/N0_healthy_front.mp4"></video>
+                          <video controls playsinline autoplay loop muted src="res/videos/normal/face/610.mp4"></video>
                       </div>
                       <div class="col-md-6 text-center">
                           <small class="d-block mb-2 font-weight-bold text-secondary">Back->Ground</small>
-                          <video controls playsinline autoplay loop muted src="res/videos/N0_healthy_back.mp4"></video>
+                          <video controls playsinline autoplay loop muted src="res/videos/normal/back/610.mp4"></video>
                       </div>
                   </div>
               </div>
@@ -176,70 +176,111 @@
       </div>
     
     
-        <div class="mb-5">
-            <h2 class="text-center section-title">🚗 N = 1 : Single Joint</h2>
-            <hr style="width: 80px; border-top: 3px solid #17a2b8; margin: 10px auto 30px auto;">
-            
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 shadow-sm" style="border-radius: 12px;">
-                        <div class="card-header bg-light text-center py-3">
-                            <h5 class="font-weight-bold m-0 text-dark">📍 Hip (Front-Left)</h5>
-                        </div>
-                        <div class="card-body p-3">
-                            <div class="mb-3">
+      <div class="mb-5">
+        <h2 class="text-center section-title">🚗 N = 1 : Single Joint</h2>
+        <hr style="width: 80px; border-top: 3px solid #17a2b8; margin: 10px auto 30px auto;">
+        
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm" style="border-radius: 12px;">
+                    <div class="card-header bg-light text-center py-3">
+                        <h5 class="font-weight-bold m-0 text-dark">📍 Hip (Front-Left)</h5>
+                    </div>
+                    <div class="card-body p-3">
+                        <div class="mb-4">
+                            <small class="d-block text-center font-weight-bold text-secondary mb-3 border-bottom pb-2">Face->Ground</small>
+                            <div class="mb-3 text-center">
                                 <span class="badge badge-secondary mb-2">⚡ Power-off</span>
-                                <video controls playsinline autoplay loop muted src="res/videos/N1_hip_poweroff.mp4" width="100%"></video>
+                                <video controls playsinline autoplay loop muted src="res/videos/N=1/HIP_FL/face/free/610.mp4" width="100%"></video>
                             </div>
-                            <hr style="border-top: 1px dashed #e2e8f0;">
-                            <div>
+                            <div class="text-center">
                                 <span class="badge badge-danger mb-2">🔒 Locked</span>
-                                <video controls playsinline autoplay loop muted src="res/videos/N1_hip_stuck.mp4" width="100%"></video>
+                                <video controls playsinline autoplay loop muted src="res/videos/N=1/HIP_FL/face/stuck/610.mp4" width="100%"></video>
+                            </div>
+                        </div>
+
+                        <div>
+                            <small class="d-block text-center font-weight-bold text-secondary mb-3 border-bottom pb-2">Back->Ground</small>
+                            <div class="mb-3 text-center">
+                                <span class="badge badge-secondary mb-2">⚡ Power-off</span>
+                                <video controls playsinline autoplay loop muted src="res/videos/N=1/HIP_FL/back/free/610.mp4" width="100%"></video>
+                            </div>
+                            <div class="text-center">
+                                <span class="badge badge-danger mb-2">🔒 Locked</span>
+                                <video controls playsinline autoplay loop muted src="res/videos/N=1/HIP_FL/back/stuck/610.mp4" width="100%"></video>
                             </div>
                         </div>
                     </div>
                 </div>
-    
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 shadow-sm" style="border-radius: 12px;">
-                        <div class="card-header bg-light text-center py-3">
-                            <h5 class="font-weight-bold m-0 text-dark">📍 Thigh (Front-Right)</h5>
-                        </div>
-                        <div class="card-body p-3">
-                            <div class="mb-3">
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm" style="border-radius: 12px;">
+                    <div class="card-header bg-light text-center py-3">
+                        <h5 class="font-weight-bold m-0 text-dark">📍 Thigh (Front-Right)</h5>
+                    </div>
+                    <div class="card-body p-3">
+                        <div class="mb-4">
+                            <small class="d-block text-center font-weight-bold text-secondary mb-3 border-bottom pb-2">Face->Ground</small>
+                            <div class="mb-3 text-center">
                                 <span class="badge badge-secondary mb-2">⚡ Power-off</span>
-                                <video controls playsinline autoplay loop muted src="res/videos/N1_thigh_poweroff.mp4" width="100%"></video>
+                                <video controls playsinline autoplay loop muted src="res/videos/N=1/Thigh_FR/face/free/610.mp4" width="100%"></video>
                             </div>
-                            <hr style="border-top: 1px dashed #e2e8f0;">
-                            <div>
+                            <div class="text-center">
                                 <span class="badge badge-danger mb-2">🔒 Locked</span>
-                                <video controls playsinline autoplay loop muted src="res/videos/N1_thigh_stuck.mp4" width="100%"></video>
+                                <video controls playsinline autoplay loop muted src="res/videos/N=1/Thigh_FR/face/stuck/610.mp4" width="100%"></video>
+                            </div>
+                        </div>
+
+                        <div>
+                            <small class="d-block text-center font-weight-bold text-secondary mb-3 border-bottom pb-2">Back->Ground</small>
+                            <div class="mb-3 text-center">
+                                <span class="badge badge-secondary mb-2">⚡ Power-off</span>
+                                <video controls playsinline autoplay loop muted src="res/videos/N=1/Thigh_FR/back/free/610.mp4" width="100%"></video>
+                            </div>
+                            <div class="text-center">
+                                <span class="badge badge-danger mb-2">🔒 Locked</span>
+                                <video controls playsinline autoplay loop muted src="res/videos/N=1/Thigh_FR/back/stuck/610.mp4" width="100%"></video>
                             </div>
                         </div>
                     </div>
                 </div>
-    
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 shadow-sm" style="border-radius: 12px;">
-                        <div class="card-header bg-light text-center py-3">
-                            <h5 class="font-weight-bold m-0 text-dark">📍 Calf (Rear-Left)</h5>
-                        </div>
-                        <div class="card-body p-3">
-                            <div class="mb-3">
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm" style="border-radius: 12px;">
+                    <div class="card-header bg-light text-center py-3">
+                        <h5 class="font-weight-bold m-0 text-dark">📍 Calf (Rear-Left)</h5>
+                    </div>
+                    <div class="card-body p-3">
+                        <div class="mb-4">
+                            <small class="d-block text-center font-weight-bold text-secondary mb-3 border-bottom pb-2">Face->Ground</small>
+                            <div class="mb-3 text-center">
                                 <span class="badge badge-secondary mb-2">⚡ Power-off</span>
-                                <video controls playsinline autoplay loop muted src="res/videos/N1_calf_poweroff.mp4" width="100%"></video>
+                                <video controls playsinline autoplay loop muted src="res/videos/N=1/Calf_RL/face/free/610.mp4" width="100%"></video>
                             </div>
-                            <hr style="border-top: 1px dashed #e2e8f0;">
-                            <div>
+                            <div class="text-center">
                                 <span class="badge badge-danger mb-2">🔒 Locked</span>
-                                <video controls playsinline autoplay loop muted src="res/videos/N1_calf_stuck.mp4" width="100%"></video>
+                                <video controls playsinline autoplay loop muted src="res/videos/N=1/Calf_RL/face/stuck/610.mp4" width="100%"></video>
+                            </div>
+                        </div>
+
+                        <div>
+                            <small class="d-block text-center font-weight-bold text-secondary mb-3 border-bottom pb-2">Back->Ground</small>
+                            <div class="mb-3 text-center">
+                                <span class="badge badge-secondary mb-2">⚡ Power-off</span>
+                                <video controls playsinline autoplay loop muted src="res/videos/N=1/Calf_RL/back/free/610.mp4" width="100%"></video>
+                            </div>
+                            <div class="text-center">
+                                <span class="badge badge-danger mb-2">🔒 Locked</span>
+                                <video controls playsinline autoplay loop muted src="res/videos/N=1/Calf_RL/back/stuck/610.mp4" width="100%"></video>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    
+    </div>
     
         <div class="mb-5">
           <h2 class="text-center section-title">🛠️ N = 2 : Double Joints</h2>
@@ -247,21 +288,21 @@
           
           <div class="card shadow-sm mb-4" style="border-radius: 14px;">
               <div class="card-header bg-white py-3">
-                  <h5 class="font-weight-bold m-0 text-dark">📍 Intra-leg (2 on 1) (Front-Left: Hip,Calf) </h5>
+                  <h5 class="font-weight-bold m-0 text-dark">📍 Intra-leg (2 on 1) (Front-Right: Hip,Calf) </h5>
               </div>
               <div class="card-body bg-light rounded-bottom p-3">
                   <div class="row text-center">
                       <div class="col-md-4 mb-2 mb-md-0">
                           <span class="video-label text-secondary">⚡ Power-off</span>
-                          <video controls playsinline autoplay loop muted src="res/videos/N2_c1_poweroff.mp4"></video>
+                          <video controls playsinline autoplay loop muted src="res/videos/N=2/Intra-leg_2on1_FL_HIP_Calf/free/610.mp4"></video>
                       </div>
                       <div class="col-md-4 mb-2 mb-md-0">
                           <span class="video-label text-danger">🔒 Locked</span>
-                          <video controls playsinline autoplay loop muted src="res/videos/N2_c1_stuck.mp4"></video>
+                          <video controls playsinline autoplay loop muted src="res/videos/N=2/Intra-leg_2on1_FL_HIP_Calf/stuck/610.mp4"></video>
                       </div>
                       <div class="col-md-4">
                           <span class="video-label text-warning font-weight-bold">🔀 Mixed: Hip Power-loss</span>
-                          <video controls playsinline autoplay loop muted src="res/videos/N2_c1_mixed.mp4"></video>
+                          <video controls playsinline autoplay loop muted src="res/videos/N=2/Intra-leg_2on1_FL_HIP_Calf/mixed/610.mp4"></video>
                       </div>
                   </div>
               </div>
@@ -275,15 +316,15 @@
                   <div class="row text-center">
                       <div class="col-md-4 mb-2 mb-md-0">
                           <span class="video-label text-secondary">⚡ Power-off</span>
-                          <video controls playsinline autoplay loop muted src="res/videos/N2_c2_poweroff.mp4"></video>
+                          <video controls playsinline autoplay loop muted src="res/videos/N=2/inter-leg_Ipsilateral/free/610.mp4"></video>
                       </div>
                       <div class="col-md-4 mb-2 mb-md-0">
                           <span class="video-label text-danger">🔒 Locked</span>
-                          <video controls playsinline autoplay loop muted src="res/videos/N2_c2_stuck.mp4"></video>
+                          <video controls playsinline autoplay loop muted src="res/videos/N=2/inter-leg_Ipsilateral/stuck/610.mp4"></video>
                       </div>
                       <div class="col-md-4">
                           <span class="video-label text-warning font-weight-bold">🔀 Mixed: Thigh Power-loss </span>
-                          <video controls playsinline autoplay loop muted src="res/videos/N2_c2_mixed.mp4"></video>
+                          <video controls playsinline autoplay loop muted src="res/videos/N=2/inter-leg_Ipsilateral/mixed/610.mp4"></video>
                       </div>
                   </div>
               </div>
@@ -297,15 +338,15 @@
                   <div class="row text-center">
                       <div class="col-md-4 mb-2 mb-md-0">
                           <span class="video-label text-secondary">⚡ Power-off</span>
-                          <video controls playsinline autoplay loop muted src="res/videos/N2_c3_poweroff.mp4"></video>
+                          <video controls playsinline autoplay loop muted src="res/videos/N=2/inter-leg_diagonal/free/610.mp4"></video>
                       </div>
                       <div class="col-md-4 mb-2 mb-md-0">
                           <span class="video-label text-danger">🔒 Locked</span>
-                          <video controls playsinline autoplay loop muted src="res/videos/N2_c3_stuck.mp4"></video>
+                          <video controls playsinline autoplay loop muted src="res/videos/N=2/inter-leg_diagonal/stuck/610.mp4"></video>
                       </div>
                       <div class="col-md-4">
                           <span class="video-label text-warning font-weight-bold">🔀 Mixed: Calf Power-Loss </span>
-                          <video controls playsinline autoplay loop muted src="res/videos/N2_c3_mixed.mp4"></video>
+                          <video controls playsinline autoplay loop muted src="res/videos/N=2/inter-leg_diagonal/mixed/610.mp4"></video>
                       </div>
                   </div>
               </div>
@@ -319,15 +360,15 @@
                   <div class="row text-center">
                       <div class="col-md-4 mb-2 mb-md-0">
                           <span class="video-label text-secondary">⚡ Power-off</span>
-                          <video controls playsinline autoplay loop muted src="res/videos/N2_c4_poweroff.mp4"></video>
+                          <video controls playsinline autoplay loop muted src="res/videos/N=2/inter-leg_Front_Hind/free/610.mp4"></video>
                       </div>
                       <div class="col-md-4 mb-2 mb-md-0">
                           <span class="video-label text-danger">🔒 Locked</span>
-                          <video controls playsinline autoplay loop muted src="res/videos/N2_c4_stuck.mp4"></video>
+                          <video controls playsinline autoplay loop muted src="res/videos/N=2/inter-leg_Front_Hind/stuck/610.mp4"></video>
                       </div>
                       <div class="col-md-4">
                           <span class="video-label text-warning font-weight-bold">🔀 Mixed: Calf Power-Loss</span>
-                          <video controls playsinline autoplay loop muted src="res/videos/N2_c4_mixed.mp4"></video>
+                          <video controls playsinline autoplay loop muted src="res/videos/N=2/inter-leg_Front_Hind/mixed/610.mp4"></video>
                       </div>
                   </div>
               </div>
@@ -347,11 +388,11 @@
                     <div class="row">
                         <div class="col-md-6 mb-3 mb-md-0 text-center">
                             <small class="d-block mb-2 font-weight-bold text-secondary">Face->Ground</small>
-                            <video controls playsinline autoplay loop muted src="res/videos/N3_case1_front.mp4" width="100%"></video>
+                            <video controls playsinline autoplay loop muted src="res/videos/N=3/face/total_single_leg/610.mp4" width="100%"></video>
                         </div>
                         <div class="col-md-6 text-center">
                             <small class="d-block mb-2 font-weight-bold text-secondary">Back->Ground</small>
-                            <video controls playsinline autoplay loop muted src="res/videos/N3_case1_back.mp4" width="100%"></video>
+                            <video controls playsinline autoplay loop muted src="res/videos/N=3/back/total_single_leg/610.mp4" width="100%"></video>
                         </div>
                     </div>
                 </div>
@@ -366,11 +407,11 @@
                     <div class="row">
                         <div class="col-md-6 mb-3 mb-md-0 text-center">
                             <small class="d-block mb-2 font-weight-bold text-secondary">Face->Ground</small>
-                            <video controls playsinline autoplay loop muted src="res/videos/N3_case2_front.mp4" width="100%"></video>
+                            <video controls playsinline autoplay loop muted src="res/videos/N=3/face/asymmetric/610.mp4" width="100%"></video>
                         </div>
                         <div class="col-md-6 text-center">
                             <small class="d-block mb-2 font-weight-bold text-secondary">Back->Ground</small>
-                            <video controls playsinline autoplay loop muted src="res/videos/N3_case2_back.mp4" width="100%"></video>
+                            <video controls playsinline autoplay loop muted src="res/videos/N=3/back/asymmetric/610.mp4" width="100%"></video>
                         </div>
                     </div>
                 </div>
@@ -385,11 +426,11 @@
                     <div class="row">
                         <div class="col-md-6 mb-3 mb-md-0 text-center">
                             <small class="d-block mb-2 font-weight-bold text-secondary">Face->Ground</small>
-                            <video controls playsinline autoplay loop muted src="res/videos/N3_case3_front.mp4" width="100%"></video>
+                            <video controls playsinline autoplay loop muted src="res/videos/N=3/face/tri_distributed/610.mp4" width="100%"></video>
                         </div>
                         <div class="col-md-6 text-center">
                             <small class="d-block mb-2 font-weight-bold text-secondary">Back->Ground</small>
-                            <video controls playsinline autoplay loop muted src="res/videos/N3_case3_back.mp4" width="100%"></video>
+                            <video controls playsinline autoplay loop muted src="res/videos/N=3/back/tri_distributed/610.mp4" width="100%"></video>
                         </div>
                     </div>
                 </div>
