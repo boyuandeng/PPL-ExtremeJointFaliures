@@ -40,26 +40,44 @@
       .gap-5 {height:5px;}
 
       .no-gutters {
-      margin-right: 0;
-      margin-left: 0;
-    }
+        margin-right: 0;
+        margin-left: 0;
+      }
 
-    .btn {
-      margin-left: 0.2rem;
-      margin-right: 0.2rem;
-		}
+      .btn {
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
+      }
 
+      /* ========================================= */
+      /* 核心修复：强制约束所有视频的尺寸和圆角 */
+      /* ========================================= */
+      video {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        border: 1px solid #ced4da;
+        background-color: #000;
+      }
+
+      .video-label {
+        font-weight: 600;
+        font-size: 0.9rem;
+        display: block;
+        margin-bottom: 6px;
+      }
 
 	</style>
 </head>
+<body>
 
 <div class="header">
 	<div class="container">
 		<center><h1>Pushing the Physical Limits: Extreme Quadrupedal Fall Recovery Under Multi-Joint Failures</h1></center>
 		<div class="gap-20"></div>
-		<!--------------------- Author Names --------------------->
 		<center>
-			<a href="https://https://boyuandeng.github.io/" target="_blank" style="font-size:20px">Boyuan Deng</a><sup
+			<a href="https://boyuandeng.github.io/" target="_blank" style="font-size:20px">Boyuan Deng</a><sup
 						style="font-size:14px">*</sup>,
 			<a href="" target="_blank" style="font-size:20px">Weijie Wang</a><sup
 						style="font-size:14px"></sup>,
@@ -76,8 +94,7 @@
 
 		<center>
 			<div class="btn-group" role="group">
-          <!-- <a href="https://ieeexplore.ieee.org/document/11495090"> -->
-            <a href="">
+          <a href="">
 					<button type="button" class="btn btn-dark">
 						<span class="icon">
               <i class="fas fa-file-pdf"></i> Paper
@@ -118,65 +135,59 @@
 
 <div class="container">
 
-    <!--------------------- abstract --------------------->
     <div class="gap-30"></div>
     <h2 style="text-align: center"> Abstract </h2>
     <div class="gap-10"></div>
     <center>
         <p style="width:90%; text-align: justify; white-space: normal;"> 
-          .</p>
+          .
+        </p>
     </center>
 
-
     <h2 style="text-align: center">Simulation and Framework</h2>
-
-    <!-- <div class="gap-10"></div>
-    <center><p style="width:90%; text-align: justify; white-space: normal;">
-      We study how quickly the policy can adapt to shifts in the visual field.
-    </p></center> -->
 
     <center>
       <div style="display: flex; justify-content: center; gap: 10px; margin-bottom: 30px;">
         <img class="img-fluid" src="images/fall.jpg" style="width: 24%;" alt="">
         <img class="img-fluid" src="images/framework.png" style="width: 60%;" alt="">
-    </div>
-    
-	</center>
-    </div>
-    
-    <div class="container my-5">
-    
-        <div class="text-center mb-5">
-          <h2 style="text-align: center">Deployment</h2>
-        </div>
-    
-        <hr class="my-5">
-    
-        <div class="mb-5">
-          <h2 class="text-center section-title text-success">N = 0 : No Failures</h2>
-          <hr style="width: 80px; border-top: 3px solid #28a745; margin: 10px auto 30px auto;">
-          
-          <div class="card shadow border-0 mb-4" style="border-radius: 16px; border: 1px solid #c3e6cb !important;">
-              <div class="card-header bg-white d-flex justify-content-between align-items-center py-3" style="border-radius: 16px 16px 0 0; border-bottom: 1px solid #c3e6cb;">
-                  <h5 class="font-weight-bold m-0 text-success">📍 Healthy</h5>
-              </div>
-              <div class="card-body bg-light rounded-bottom p-4">
-                  <div class="row">
-                      <div class="col-md-6 mb-3 mb-md-0 text-center">
-                          <small class="d-block mb-2 font-weight-bold text-secondary">Face->Ground</small>
-                          <video controls playsinline preload="metadata" loop muted src="res/videos/normal/face/610.mp4"></video>
-                      </div>
-                      <div class="col-md-6 text-center">
-                          <small class="d-block mb-2 font-weight-bold text-secondary">Back->Ground</small>
-                          <video controls playsinline preload="metadata" loop muted src="res/videos/normal/back/610.mp4"></video>
-                      </div>
-                  </div>
-              </div>
-          </div>
       </div>
+	</center>
+</div>
     
-    
-      <div class="mb-5">
+<div class="container my-5">
+
+    <div class="text-center mb-5">
+        <h2 style="text-align: center">Deployment</h2>
+    </div>
+
+    <hr class="my-5">
+
+    <div class="mb-5">
+        <h2 class="text-center section-title text-success">N = 0 : No Failures</h2>
+        <hr style="width: 80px; border-top: 3px solid #28a745; margin: 10px auto 30px auto;">
+        
+        <div class="card shadow border-0 mb-4" style="border-radius: 16px; border: 1px solid #c3e6cb !important;">
+            <div class="card-header bg-white d-flex justify-content-between align-items-center py-3" style="border-radius: 16px 16px 0 0; border-bottom: 1px solid #c3e6cb;">
+                <h5 class="font-weight-bold m-0 text-success">📍 Healthy</h5>
+            </div>
+            <div class="card-body bg-light rounded-bottom p-4">
+                <div class="row">
+                    <div class="col-md-6 mb-3 mb-md-0 text-center">
+                        <small class="d-block mb-2 font-weight-bold text-secondary">Face->Ground</small>
+                        <video controls playsinline preload="metadata" loop muted src="res/videos/normal/face/610.mp4"></video>
+                    </div>
+            
+                    <div class="col-md-6 text-center">
+                        <small class="d-block mb-2 font-weight-bold text-secondary">Back->Ground</small>
+                        <video controls playsinline preload="metadata" loop muted src="res/videos/normal/back/610.mp4"></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mb-5">
         <h2 class="text-center section-title">🚗 N = 1 : Single Joint</h2>
         <hr style="width: 80px; border-top: 3px solid #17a2b8; margin: 10px auto 30px auto;">
         
@@ -191,11 +202,11 @@
                             <small class="d-block text-center font-weight-bold text-secondary mb-3 border-bottom pb-2">Face->Ground</small>
                             <div class="mb-3 text-center">
                                 <span class="badge badge-secondary mb-2">⚡ Power-off</span>
-                                <video controls playsinline preload="metadata" loop muted src="res/videos/N=1/HIP_FL/face/free/610.mp4" width="100%"></video>
+                                <video controls playsinline preload="metadata" loop muted src="res/videos/N=1/HIP_FL/face/free/610.mp4"></video>
                             </div>
                             <div class="text-center">
                                 <span class="badge badge-danger mb-2">🔒 Locked</span>
-                                <video controls playsinline preload="metadata" loop muted src="res/videos/N=1/HIP_FL/face/stuck/610.mp4" width="100%"></video>
+                                <video controls playsinline preload="metadata" loop muted src="res/videos/N=1/HIP_FL/face/stuck/610.mp4"></video>
                             </div>
                         </div>
 
@@ -203,11 +214,11 @@
                             <small class="d-block text-center font-weight-bold text-secondary mb-3 border-bottom pb-2">Back->Ground</small>
                             <div class="mb-3 text-center">
                                 <span class="badge badge-secondary mb-2">⚡ Power-off</span>
-                                <video controls playsinline preload="metadata" loop muted src="res/videos/N=1/HIP_FL/back/free/610.mp4" width="100%"></video>
+                                <video controls playsinline preload="metadata" loop muted src="res/videos/N=1/HIP_FL/back/free/610.mp4"></video>
                             </div>
                             <div class="text-center">
                                 <span class="badge badge-danger mb-2">🔒 Locked</span>
-                                <video controls playsinline preload="metadata" loop muted src="res/videos/N=1/HIP_FL/back/stuck/610.mp4" width="100%"></video>
+                                <video controls playsinline preload="metadata" loop muted src="res/videos/N=1/HIP_FL/back/stuck/610.mp4"></video>
                             </div>
                         </div>
                     </div>
@@ -224,11 +235,11 @@
                             <small class="d-block text-center font-weight-bold text-secondary mb-3 border-bottom pb-2">Face->Ground</small>
                             <div class="mb-3 text-center">
                                 <span class="badge badge-secondary mb-2">⚡ Power-off</span>
-                                <video controls playsinline preload="metadata" loop muted src="res/videos/N=1/Thigh_FR/face/free/610.mp4" width="100%"></video>
+                                <video controls playsinline preload="metadata" loop muted src="res/videos/N=1/Thigh_FR/face/free/610.mp4"></video>
                             </div>
                             <div class="text-center">
                                 <span class="badge badge-danger mb-2">🔒 Locked</span>
-                                <video controls playsinline preload="metadata" loop muted src="res/videos/N=1/Thigh_FR/face/stuck/610.mp4" width="100%"></video>
+                                <video controls playsinline preload="metadata" loop muted src="res/videos/N=1/Thigh_FR/face/stuck/610.mp4"></video>
                             </div>
                         </div>
 
@@ -236,11 +247,11 @@
                             <small class="d-block text-center font-weight-bold text-secondary mb-3 border-bottom pb-2">Back->Ground</small>
                             <div class="mb-3 text-center">
                                 <span class="badge badge-secondary mb-2">⚡ Power-off</span>
-                                <video controls playsinline preload="metadata" loop muted src="res/videos/N=1/Thigh_FR/back/free/610.mp4" width="100%"></video>
+                                <video controls playsinline preload="metadata" loop muted src="res/videos/N=1/Thigh_FR/back/free/610.mp4"></video>
                             </div>
                             <div class="text-center">
                                 <span class="badge badge-danger mb-2">🔒 Locked</span>
-                                <video controls playsinline preload="metadata" loop muted src="res/videos/N=1/Thigh_FR/back/stuck/610.mp4" width="100%"></video>
+                                <video controls playsinline preload="metadata" loop muted src="res/videos/N=1/Thigh_FR/back/stuck/610.mp4"></video>
                             </div>
                         </div>
                     </div>
@@ -257,11 +268,11 @@
                             <small class="d-block text-center font-weight-bold text-secondary mb-3 border-bottom pb-2">Face->Ground</small>
                             <div class="mb-3 text-center">
                                 <span class="badge badge-secondary mb-2">⚡ Power-off</span>
-                                <video controls playsinline preload="metadata" loop muted src="res/videos/N=1/Calf_RL/face/free/610.mp4" width="100%"></video>
+                                <video controls playsinline preload="metadata" loop muted src="res/videos/N=1/Calf_RL/face/free/610.mp4"></video>
                             </div>
                             <div class="text-center">
                                 <span class="badge badge-danger mb-2">🔒 Locked</span>
-                                <video controls playsinline preload="metadata" loop muted src="res/videos/N=1/Calf_RL/face/stuck/610.mp4" width="100%"></video>
+                                <video controls playsinline preload="metadata" loop muted src="res/videos/N=1/Calf_RL/face/stuck/610.mp4"></video>
                             </div>
                         </div>
 
@@ -269,11 +280,11 @@
                             <small class="d-block text-center font-weight-bold text-secondary mb-3 border-bottom pb-2">Back->Ground</small>
                             <div class="mb-3 text-center">
                                 <span class="badge badge-secondary mb-2">⚡ Power-off</span>
-                                <video controls playsinline preload="metadata" loop muted src="res/videos/N=1/Calf_RL/back/free/610.mp4" width="100%"></video>
+                                <video controls playsinline preload="metadata" loop muted src="res/videos/N=1/Calf_RL/back/free/610.mp4"></video>
                             </div>
                             <div class="text-center">
                                 <span class="badge badge-danger mb-2">🔒 Locked</span>
-                                <video controls playsinline preload="metadata" loop muted src="res/videos/N=1/Calf_RL/back/stuck/610.mp4" width="100%"></video>
+                                <video controls playsinline preload="metadata" loop muted src="res/videos/N=1/Calf_RL/back/stuck/610.mp4"></video>
                             </div>
                         </div>
                     </div>
@@ -282,198 +293,177 @@
         </div>
     </div>
     
-        <div class="mb-5">
-          <h2 class="text-center section-title">🛠️ N = 2 : Double Joints</h2>
-          <hr style="width: 80px; border-top: 3px solid #ffc107; margin: 10px auto 30px auto;">
+    <div class="mb-5">
+        <h2 class="text-center section-title">🛠️ N = 2 : Double Joints</h2>
+        <hr style="width: 80px; border-top: 3px solid #ffc107; margin: 10px auto 30px auto;">
           
-          <div class="card shadow-sm mb-4" style="border-radius: 14px;">
-              <div class="card-header bg-white py-3">
-                  <h5 class="font-weight-bold m-0 text-dark">📍 Intra-leg (2 on 1) (Front-Right: Hip,Calf) </h5>
-              </div>
-              <div class="card-body bg-light rounded-bottom p-3">
-                  <div class="row text-center">
-                      <div class="col-md-4 mb-2 mb-md-0">
-                          <span class="video-label text-secondary">⚡ Power-off</span>
-                          <video controls playsinline preload="metadata" loop muted src="res/videos/N=2/Intra-leg_2on1_FL_HIP_Calf/free/610.mp4"></video>
-                      </div>
-                      <div class="col-md-4 mb-2 mb-md-0">
-                          <span class="video-label text-danger">🔒 Locked</span>
-                          <video controls playsinline preload="metadata" loop muted src="res/videos/N=2/Intra-leg_2on1_FL_HIP_Calf/stuck/610.mp4"></video>
-                      </div>
-                      <div class="col-md-4">
-                          <span class="video-label text-warning font-weight-bold">🔀 Mixed: Hip Power-loss</span>
-                          <video controls playsinline preload="metadata" loop muted src="res/videos/N=2/Intra-leg_2on1_FL_HIP_Calf/mixed/610.mp4"></video>
-                      </div>
-                  </div>
-              </div>
-          </div>
-  
-          <div class="card shadow-sm mb-4" style="border-radius: 14px;">
-              <div class="card-header bg-white py-3">
-                  <h5 class="font-weight-bold m-0 text-dark">📍 Inter-leg: Ipsilateral (Front-Left Hip; Rear-Left Thigh) </h5>
-              </div>
-              <div class="card-body bg-light rounded-bottom p-3">
-                  <div class="row text-center">
-                      <div class="col-md-4 mb-2 mb-md-0">
-                          <span class="video-label text-secondary">⚡ Power-off</span>
-                          <video controls playsinline preload="metadata" loop muted src="res/videos/N=2/inter-leg_Ipsilateral/free/610.mp4"></video>
-                      </div>
-                      <div class="col-md-4 mb-2 mb-md-0">
-                          <span class="video-label text-danger">🔒 Locked</span>
-                          <video controls playsinline preload="metadata" loop muted src="res/videos/N=2/inter-leg_Ipsilateral/stuck/610.mp4"></video>
-                      </div>
-                      <div class="col-md-4">
-                          <span class="video-label text-warning font-weight-bold">🔀 Mixed: Thigh Power-loss </span>
-                          <video controls playsinline preload="metadata" loop muted src="res/videos/N=2/inter-leg_Ipsilateral/mixed/610.mp4"></video>
-                      </div>
-                  </div>
-              </div>
-          </div>
-  
-          <div class="card shadow-sm mb-4" style="border-radius: 14px;">
-              <div class="card-header bg-white py-3">
-                  <h5 class="font-weight-bold m-0 text-dark">📍 Inter-leg: Diagonal (Front-Left: Calf Rear-Right: Hip) </h5>
-              </div>
-              <div class="card-body bg-light rounded-bottom p-3">
-                  <div class="row text-center">
-                      <div class="col-md-4 mb-2 mb-md-0">
-                          <span class="video-label text-secondary">⚡ Power-off</span>
-                          <video controls playsinline preload="metadata" loop muted src="res/videos/N=2/inter-leg_diagonal/free/610.mp4"></video>
-                      </div>
-                      <div class="col-md-4 mb-2 mb-md-0">
-                          <span class="video-label text-danger">🔒 Locked</span>
-                          <video controls playsinline preload="metadata" loop muted src="res/videos/N=2/inter-leg_diagonal/stuck/610.mp4"></video>
-                      </div>
-                      <div class="col-md-4">
-                          <span class="video-label text-warning font-weight-bold">🔀 Mixed: Calf Power-Loss </span>
-                          <video controls playsinline preload="metadata" loop muted src="res/videos/N=2/inter-leg_diagonal/mixed/610.mp4"></video>
-                      </div>
-                  </div>
-              </div>
-          </div>
-  
-          <div class="card shadow-sm mb-4" style="border-radius: 14px;">
-              <div class="card-header bg-white py-3">
-                  <h5 class="font-weight-bold m-0 text-dark">📍 Inter-leg: Front/Hind (Rear-Left:Thigh; Rear-Right:Calf)</h5>
-              </div>
-              <div class="card-body bg-light rounded-bottom p-3">
-                  <div class="row text-center">
-                      <div class="col-md-4 mb-2 mb-md-0">
-                          <span class="video-label text-secondary">⚡ Power-off</span>
-                          <video controls playsinline preload="metadata" loop muted src="res/videos/N=2/inter-leg_Front_Hind/free/610.mp4"></video>
-                      </div>
-                      <div class="col-md-4 mb-2 mb-md-0">
-                          <span class="video-label text-danger">🔒 Locked</span>
-                          <video controls playsinline preload="metadata" loop muted src="res/videos/N=2/inter-leg_Front_Hind/stuck/610.mp4"></video>
-                      </div>
-                      <div class="col-md-4">
-                          <span class="video-label text-warning font-weight-bold">🔀 Mixed: Calf Power-Loss</span>
-                          <video controls playsinline preload="metadata" loop muted src="res/videos/N=2/inter-leg_Front_Hind/mixed/610.mp4"></video>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-    
-    
-        <div class="mb-5">
-            <h2 class="text-center section-title text-danger">💥 N = 3 : Triple Joints</h2>
-            <hr style="width: 120px; border-top: 3px solid #dc3545; margin: 10px auto 30px auto;">
-            <div class="card shadow border-0 mb-4" style="border-radius: 16px; border: 1px solid #f5c6cb !important; background-color: #fff;">
-                <div class="card-header bg-white d-flex justify-content-between align-items-center py-3" style="border-radius: 16px 16px 0 0; border-bottom: 1px solid #f5c6cb;">
-                    <h5 class="font-weight-bold m-0 text-danger">📍 Total Single-leg (3 on 1) (Front-Right)</h5>
-                    <span class="badge badge-danger px-3 py-2">Power-Loss:Hip, Calf</span>
-                </div>
-                <div class="card-body bg-light rounded-bottom p-4">
-                    <div class="row">
-                        <div class="col-md-6 mb-3 mb-md-0 text-center">
-                            <small class="d-block mb-2 font-weight-bold text-secondary">Face->Ground</small>
-                            <video controls playsinline preload="metadata" loop muted src="res/videos/N=3/face/total_single_leg/610.mp4" width="100%"></video>
-                        </div>
-                        <div class="col-md-6 text-center">
-                            <small class="d-block mb-2 font-weight-bold text-secondary">Back->Ground</small>
-                            <video controls playsinline preload="metadata" loop muted src="res/videos/N=3/back/total_single_leg/610.mp4" width="100%"></video>
-                        </div>
+        <div class="card shadow-sm mb-4" style="border-radius: 14px;">
+            <div class="card-header bg-white py-3">
+                <h5 class="font-weight-bold m-0 text-dark">📍 Intra-leg (2 on 1) (Front-Right: Hip,Calf) </h5>
+            </div>
+            <div class="card-body bg-light rounded-bottom p-3">
+                <div class="row text-center">
+                    <div class="col-md-4 mb-2 mb-md-0">
+                        <span class="video-label text-secondary">⚡ Power-off</span>
+                        <video controls playsinline preload="metadata" loop muted src="res/videos/N=2/Intra-leg_2on1_FL_HIP_Calf/free/610.mp4"></video>
+                    </div>
+                    <div class="col-md-4 mb-2 mb-md-0">
+                        <span class="video-label text-danger">🔒 Locked</span>
+                        <video controls playsinline preload="metadata" loop muted src="res/videos/N=2/Intra-leg_2on1_FL_HIP_Calf/stuck/610.mp4"></video>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="video-label text-warning font-weight-bold">🔀 Mixed: Hip Power-loss</span>
+                        <video controls playsinline preload="metadata" loop muted src="res/videos/N=2/Intra-leg_2on1_FL_HIP_Calf/mixed/610.mp4"></video>
                     </div>
                 </div>
             </div>
-    
-            <div class="card shadow border-0 mb-4" style="border-radius: 16px; border: 1px solid #f5c6cb !important; background-color: #fff;">
-                <div class="card-header bg-white d-flex justify-content-between align-items-center py-3" style="border-radius: 16px 16px 0 0; border-bottom: 1px solid #f5c6cb;">
-                    <h5 class="font-weight-bold m-0 text-danger">📍 Asymmetric Bi-leg (2+1) (Front-Right:Thigh, Calf; Rear-Left:Hip)</h5>
-                    <span class="badge badge-danger px-3 py-2">Power-Loss:Hip </span>
-                </div>
-                <div class="card-body bg-light rounded-bottom p-4">
-                    <div class="row">
-                        <div class="col-md-6 mb-3 mb-md-0 text-center">
-                            <small class="d-block mb-2 font-weight-bold text-secondary">Face->Ground</small>
-                            <video controls playsinline preload="metadata" loop muted src="res/videos/N=3/face/asymmetric/610.mp4" width="100%"></video>
-                        </div>
-                        <div class="col-md-6 text-center">
-                            <small class="d-block mb-2 font-weight-bold text-secondary">Back->Ground</small>
-                            <video controls playsinline preload="metadata" loop muted src="res/videos/N=3/back/asymmetric/610.mp4" width="100%"></video>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="card shadow border-0 mb-4" style="border-radius: 16px; border: 1px solid #f5c6cb !important; background-color: #fff;">
-                <div class="card-header bg-white d-flex justify-content-between align-items-center py-3" style="border-radius: 16px 16px 0 0; border-bottom: 1px solid #f5c6cb;">
-                    <h5 class="font-weight-bold m-0 text-danger">📍 Tri-distributed (1+1+1) (Front-Right:Hip; Rear-Right:Thigh; Rear-Left:Calf) </h5>
-                    <span class="badge badge-danger px-3 py-2">Power-Loss:Hip, Thigh </span>
-                </div>
-                <div class="card-body bg-light rounded-bottom p-4">
-                    <div class="row">
-                        <div class="col-md-6 mb-3 mb-md-0 text-center">
-                            <small class="d-block mb-2 font-weight-bold text-secondary">Face->Ground</small>
-                            <video controls playsinline preload="metadata" loop muted src="res/videos/N=3/face/tri_distributed/610.mp4" width="100%"></video>
-                        </div>
-                        <div class="col-md-6 text-center">
-                            <small class="d-block mb-2 font-weight-bold text-secondary">Back->Ground</small>
-                            <video controls playsinline preload="metadata" loop muted src="res/videos/N=3/back/tri_distributed/610.mp4" width="100%"></video>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
         </div>
-    
+  
+        <div class="card shadow-sm mb-4" style="border-radius: 14px;">
+            <div class="card-header bg-white py-3">
+                <h5 class="font-weight-bold m-0 text-dark">📍 Inter-leg: Ipsilateral (Front-Left Hip; Rear-Left Thigh) </h5>
+            </div>
+            <div class="card-body bg-light rounded-bottom p-3">
+                <div class="row text-center">
+                    <div class="col-md-4 mb-2 mb-md-0">
+                        <span class="video-label text-secondary">⚡ Power-off</span>
+                        <video controls playsinline preload="metadata" loop muted src="res/videos/N=2/inter-leg_Ipsilateral/free/610.mp4"></video>
+                    </div>
+                    <div class="col-md-4 mb-2 mb-md-0">
+                        <span class="video-label text-danger">🔒 Locked</span>
+                        <video controls playsinline preload="metadata" loop muted src="res/videos/N=2/inter-leg_Ipsilateral/stuck/610.mp4"></video>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="video-label text-warning font-weight-bold">🔀 Mixed: Thigh Power-loss </span>
+                        <video controls playsinline preload="metadata" loop muted src="res/videos/N=2/inter-leg_Ipsilateral/mixed/610.mp4"></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+        <div class="card shadow-sm mb-4" style="border-radius: 14px;">
+            <div class="card-header bg-white py-3">
+                <h5 class="font-weight-bold m-0 text-dark">📍 Inter-leg: Diagonal (Front-Left: Calf Rear-Right: Hip) </h5>
+            </div>
+            <div class="card-body bg-light rounded-bottom p-3">
+                <div class="row text-center">
+                    <div class="col-md-4 mb-2 mb-md-0">
+                        <span class="video-label text-secondary">⚡ Power-off</span>
+                        <video controls playsinline preload="metadata" loop muted src="res/videos/N=2/inter-leg_diagonal/free/610.mp4"></video>
+                    </div>
+                    <div class="col-md-4 mb-2 mb-md-0">
+                        <span class="video-label text-danger">🔒 Locked</span>
+                        <video controls playsinline preload="metadata" loop muted src="res/videos/N=2/inter-leg_diagonal/stuck/610.mp4"></video>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="video-label text-warning font-weight-bold">🔀 Mixed: Calf Power-Loss </span>
+                        <video controls playsinline preload="metadata" loop muted src="res/videos/N=2/inter-leg_diagonal/mixed/610.mp4"></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+        <div class="card shadow-sm mb-4" style="border-radius: 14px;">
+            <div class="card-header bg-white py-3">
+                <h5 class="font-weight-bold m-0 text-dark">📍 Inter-leg: Front/Hind (Rear-Left:Thigh; Rear-Right:Calf)</h5>
+            </div>
+            <div class="card-body bg-light rounded-bottom p-3">
+                <div class="row text-center">
+                    <div class="col-md-4 mb-2 mb-md-0">
+                        <span class="video-label text-secondary">⚡ Power-off</span>
+                        <video controls playsinline preload="metadata" loop muted src="res/videos/N=2/inter-leg_Front_Hind/free/610.mp4"></video>
+                    </div>
+                    <div class="col-md-4 mb-2 mb-md-0">
+                        <span class="video-label text-danger">🔒 Locked</span>
+                        <video controls playsinline preload="metadata" loop muted src="res/videos/N=2/inter-leg_Front_Hind/stuck/610.mp4"></video>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="video-label text-warning font-weight-bold">🔀 Mixed: Calf Power-Loss</span>
+                        <video controls playsinline preload="metadata" loop muted src="res/videos/N=2/inter-leg_Front_Hind/mixed/610.mp4"></video>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     
-
-
-
-
-      	<h2 style="text-align: center"> Bibtex </h2>
-	<pre style="background-color: #f4f4f4;">
-
-<!-- 
-    @ARTICLE{11495090,
-      author={Deng, Boyuan and Yang, Xu and Mo, Yilin and Tsagarakis, Nikolaos},
-      journal={IEEE Robotics and Automation Letters}, 
-      title={Teacher-Guided Terrain-Aware Learning for Recovery of Quadruped Robots}, 
-      year={2026},
-      volume={11},
-      number={6},
-      pages={7564-7571},
-      keywords={Quadrupedal robots;reinforcement learning;robot learning},
-      doi={10.1109/LRA.2026.3688056}} -->
-
-  </pre>
-	<hr>
-
-	<b><span style="font-size:22px">Acknowledgements:</span></b><br>
-
-  We would like to thank CoCo and all of guys from Humanoids and Human Centered Mechatronics (HHCM) for their discussions.
-
-	<p style="text-align: right"><a href="https://github.com/HaozhiQi/haozhiqi.github.io/tree/master/hora" style="font-size:12px;">Template for this Website</a></p>
-
-
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="res/js/bootstrap.min.js"></script>
-
+    <div class="mb-5">
+        <h2 class="text-center section-title text-danger">💥 N = 3 : Triple Joints</h2>
+        <hr style="width: 120px; border-top: 3px solid #dc3545; margin: 10px auto 30px auto;">
+        
+        <div class="card shadow border-0 mb-4" style="border-radius: 16px; border: 1px solid #f5c6cb !important; background-color: #fff;">
+            <div class="card-header bg-white d-flex justify-content-between align-items-center py-3" style="border-radius: 16px 16px 0 0; border-bottom: 1px solid #f5c6cb;">
+                <h5 class="font-weight-bold m-0 text-danger">📍 Total Single-leg (3 on 1) (Front-Right)</h5>
+                <span class="badge badge-danger px-3 py-2">Power-Loss:Hip, Calf</span>
+            </div>
+            <div class="card-body bg-light rounded-bottom p-4">
+                <div class="row">
+                    <div class="col-md-6 mb-3 mb-md-0 text-center">
+                        <small class="d-block mb-2 font-weight-bold text-secondary">Face->Ground</small>
+                        <video controls playsinline preload="metadata" loop muted src="res/videos/N=3/face/total_single_leg/610.mp4"></video>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <small class="d-block mb-2 font-weight-bold text-secondary">Back->Ground</small>
+                        <video controls playsinline preload="metadata" loop muted src="res/videos/N=3/back/total_single_leg/610.mp4"></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+        <div class="card shadow border-0 mb-4" style="border-radius: 16px; border: 1px solid #f5c6cb !important; background-color: #fff;">
+            <div class="card-header bg-white d-flex justify-content-between align-items-center py-3" style="border-radius: 16px 16px 0 0; border-bottom: 1px solid #f5c6cb;">
+                <h5 class="font-weight-bold m-0 text-danger">📍 Asymmetric Bi-leg (2+1) (Front-Right:Thigh, Calf; Rear-Left:Hip)</h5>
+                <span class="badge badge-danger px-3 py-2">Power-Loss:Hip </span>
+            </div>
+            <div class="card-body bg-light rounded-bottom p-4">
+                <div class="row">
+                    <div class="col-md-6 mb-3 mb-md-0 text-center">
+                        <small class="d-block mb-2 font-weight-bold text-secondary">Face->Ground</small>
+                        <video controls playsinline preload="metadata" loop muted src="res/videos/N=3/face/asymmetric/610.mp4"></video>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <small class="d-block mb-2 font-weight-bold text-secondary">Back->Ground</small>
+                        <video controls playsinline preload="metadata" loop muted src="res/videos/N=3/back/asymmetric/610.mp4"></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+        <div class="card shadow border-0 mb-4" style="border-radius: 16px; border: 1px solid #f5c6cb !important; background-color: #fff;">
+            <div class="card-header bg-white d-flex justify-content-between align-items-center py-3" style="border-radius: 16px 16px 0 0; border-bottom: 1px solid #f5c6cb;">
+                <h5 class="font-weight-bold m-0 text-danger">📍 Tri-distributed (1+1+1) (Front-Right:Hip; Rear-Right:Thigh; Rear-Left:Calf) </h5>
+                <span class="badge badge-danger px-3 py-2">Power-Loss:Hip, Thigh </span>
+            </div>
+            <div class="card-body bg-light rounded-bottom p-4">
+                <div class="row">
+                    <div class="col-md-6 mb-3 mb-md-0 text-center">
+                        <small class="d-block mb-2 font-weight-bold text-secondary">Face->Ground</small>
+                        <video controls playsinline preload="metadata" loop muted src="res/videos/N=3/face/tri_distributed/610.mp4"></video>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <small class="d-block mb-2 font-weight-bold text-secondary">Back->Ground</small>
+                        <video controls playsinline preload="metadata" loop muted src="res/videos/N=3/back/tri_distributed/610.mp4"></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 </div>
+
+<h2 style="text-align: center"> Bibtex </h2>
+<pre style="background-color: #f4f4f4;">
+
+</pre>
+<hr>
+
+<div class="container mb-5">
+    <b><span style="font-size:22px">Acknowledgements:</span></b><br>
+    We would like to thank CoCo and all of guys from Humanoids and Human Centered Mechatronics (HHCM) for their discussions.
+    <p style="text-align: right"><a href="https://github.com/HaozhiQi/haozhiqi.github.io/tree/master/hora" style="font-size:12px;">Template for this Website</a></p>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="res/js/bootstrap.min.js"></script>
+
+</body>
 </html>
